@@ -2,9 +2,8 @@ import path from "path"
 import react from "@vitejs/plugin-react"
 import { defineConfig } from "vite"
 
-// https://vite.dev/config/
 export default defineConfig({
-  base: '/',
+  base: '/neuromind1/',
   plugins: [react()],
   resolve: {
     alias: {
@@ -12,3 +11,11 @@ export default defineConfig({
     },
   },
 });
+```
+
+---
+
+**Шаг 2 — Создайте файл workflow**
+В репозитории нажмите **Add file → Create new file** → в поле имени файла введите точно:
+```
+.github/workflows/deploy.yml
